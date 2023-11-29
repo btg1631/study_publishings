@@ -1,0 +1,14 @@
+.grid-item-second-main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-container {
+    display: grid;
+    /* 갯수만큼 컬럼 수만큼 자동 너비 조정
+    grid-template-columns: auto auto auto; */
+    /* 지정 넓이만큼 표시
+    grid-template-columns: 50px auto auto; */
+    grid-template-columns: 20% 50% 30%;
+    gap: 10px;
+}
