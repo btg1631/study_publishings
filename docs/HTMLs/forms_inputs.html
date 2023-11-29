@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms_inputs</title>
+</head>
+
+<body>
+
+    <!-- form tag - input 으로 정보 전달 목적 -->
+    <!-- 
+        DB에서도 정보를 저장할 위치를 설정해야 함.
+        name에 카테고리할 제목을 넣어줘야 함.(꼭 영문으로 넣어줘야 함)
+     -->
+    <div>
+        input 으로 정보 전달 목적</div>
+    <form action="./welcome.html" method="get">
+        <!-- input:text까지 넣고 Enter해야 함 -->
+        <div>
+            양말 이름 : <input type="text" name="socks" id="">
+        </div>
+        <div>
+            양말 개수 : <input type="text" name="socks_count" id="">
+        </div>
+        <div>
+            <button>welcome.html로 전송</button>
+        </div>
+    </form>
+    </div>
+    <!-- form tag 사이트 간 정보 전달  -->
+    <div>form tag 사이트 간 정보 전달</div>
+    <form action="./welcome.html" method="get">
+        <button>welcome.html로 전송</button>
+    </form>
+    </div>
+    <hr>
+    <div>check boxes</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="labname" value="yojulab" id="">
+        </div>
+        <!-- checkbox = input:checkbox -->
+        <div>
+            <div>
+                강아지 말 희망 <input type="checkbox" name="dog_lang" id="">
+            </div>
+            <!-- 글씨 클릭으로도 체크될 수 있게 -->
+            <!-- for와 id(=identity)에 같은 값을 넣어서 연결시킴 -->
+            <div>
+                <label for="catlang">고양이 말 희망</label>
+                <input type="checkbox" name="cat_lang" id="catlang">
+            </div>
+        </div>
+        <!-- button:submit이 기본형임 -->
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <!-- button:reset -->
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>
+    </form>
+    <hr>
+    <!-- radio button -->
+    <div>radio buttons</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="labname" value="yojulab" id="">
+        </div>
+        <!-- checkbox = input:checkbox -->
+        <div>
+            <div>- 희망 사항 선택 -</div>
+            <!-- radio일 때(만) 항목의 name이 겹쳐야 됨. -->
+            <div>
+                <label for="dog_lang">강아지 말 희망</label>
+                <input type="radio" name="hope_lang" value="dog_lang" id="dog_lang">
+            </div>
+
+            <div>
+                <label for="cat_lang">고양이 말 희망</label>
+                <input type="radio" name="hope_lang" value="cat_lang" id="cat_lang">
+            </div>
+        </div>
+        <!-- button:submit이 기본형임 -->
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <!-- button:reset form의 정보 재설정-->
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>
+    </form>
+<hr>
+    <!-- textarea -->
+
+    <div>textarea</div>
+    <form action="./links.html" method="get">
+        <div>
+            연구소 이름 : <input type="text" name="labname" value="yojulab" id="">
+        </div>
+        <!-- checkbox = input:checkbox -->
+        <div>
+            <div>
+                - 희망 사항 작성 -
+            </div>
+            <!-- textarea -> 텍스트 창 만들기 -->
+            <div>
+                <textarea name="hope_write" id="" cols="30" rows="10"></textarea>
+            </div>
+
+        </div>
+        <!-- button:submit이 기본형임 -->
+        <div>
+            <button type="submit">links로 정보 전달</button>
+            <!-- button:reset form의 정보 재설정-->
+            <button type="reset">같은 form 내 정보 재설정</button>
+        </div>
+    </form>
+    <hr>
+</body>
+
+</html>
